@@ -18,7 +18,7 @@ echo "Setup ZSH"
 
 if [ ! -d "~/.oh-my-zsh" ]; then
 	echo "No Oh my ZSH found"
-	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended "" --keep-zshrc
 	
 	echo "Install spaceship"
 	ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
