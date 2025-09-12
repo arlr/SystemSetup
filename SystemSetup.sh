@@ -8,8 +8,7 @@ cd SetupDL
 
 sudo apt update && sudo apt upgrade -y
 
-sudo apt install tmux zsh
-
+sudo apt install tmux zsh openvpn
 
 # ZSH setup
 
