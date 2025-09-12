@@ -18,7 +18,10 @@ echo "Setup ZSH"
 
 if [ ! -d "~/.oh-my-zsh" ]; then
 	echo "No Oh my ZSH found"
-	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended "" --keep-zshrc
+ 	# Skip unattended to avoid zsh to run directly
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+ 	# Set ZSH as default shell manually
+ 	chsh -s $(which zsh)
 	
 	echo "Install spaceship"
 	ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
