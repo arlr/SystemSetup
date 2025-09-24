@@ -48,8 +48,10 @@ cd ..
 
 echo "Setup Tmux"
 wget -O ~/.tmux.conf https://raw.githubusercontent.com/arlr/tmux_config/refs/heads/main/.tmux.conf
-tmux source-file ~/
-tmux source-file ~/.tmux.conf
+
+#Tmux conf file hqs the infor to DL qnd instqll plugins + themes.
+tmux source ~/.tmux.conf
+
 
 # Clean
 echo "Remove download folder"
